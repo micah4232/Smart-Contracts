@@ -1,0 +1,14 @@
+<html><body style="font-size:200px">
+...
+<script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.umd.js"></script>
+
+<script>
+const address = "0x274c8aE38e930A9E6aB22468f848ed4183D37c88";
+const abi = ["function favoriteNumber() pure returns (int)"];
+document.addEventListener("DOMContentLoaded", async function() {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const contract = new ethers.Contract(address, abi, provider);
+    const favoriteNumber = await contract.favoriteNumber();
+    document.body.innerHTML = favoriteNumber.toString();
+});
+</script></html>
