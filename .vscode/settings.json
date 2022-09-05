@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.CustomBrowser": null,
+    "liveServer.settings.proxy": {
+        "proxyUri": "http://127.0.0.1:8000"
+    },
+    "liveServer.settings.useLocalIp": false
+}
